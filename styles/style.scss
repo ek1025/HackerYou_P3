@@ -1,0 +1,461 @@
+@import '../partials/setup'; // setup
+@import '../partials/variables'; // variables
+@import '../partials/mixins'; //mixins
+
+
+//__________GENERAL CSS__________//
+// // //
+// //
+//
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.4rem;
+	line-height: 1.7;
+	font-family: $body_font;
+	font-weight: 400;
+	background: rgb(240,240,240);
+}
+
+
+h1 {
+	font-family: $title_font;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	background-color: $color01;
+	padding:20px;
+	margin-top:0;
+	width:200px;
+	border-bottom: 3pt solid $color03;
+	line-height: 1;
+	text-align:center;
+}
+
+
+h2 {
+	font-family: $title_font;
+	font-weight: 700;
+	font-size: 5em;
+	line-height: 1.2;
+	padding:10px;
+}
+
+a {
+	color: $color01;
+	text-decoration: none;
+}
+
+.flexParent {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flexALT {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex:1 0 auto;
+}
+
+p {
+	font-size:1.8em;
+	color: white;
+	padding:10px;
+}
+
+.half {
+	width: 50%;
+}
+
+.backtotop {
+	position:fixed;
+	color: $color03;
+	z-index:5;
+	width:50px;
+	height:50px;
+	text-decoration: none;
+	background:none;
+	display:inline;
+	right:1px;
+	bottom:1px;
+	text-align: center;
+		i {
+			font-size: 2em;
+		}
+
+}
+
+//__________HEADER 1 CSS__________//
+// // //
+// //
+//
+.header_nav{
+	background: white;
+	box-shadow: 0px 3px 5px #888888;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 25px;
+	color: white;
+	padding-top:0;
+}
+
+
+ul.mainNav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+
+	li {
+		margin-right: 2rem;
+
+		a {
+			display: inline-block;
+			height: 100%;
+		}
+	}
+}
+
+.showNav {
+	display: flex !important;
+}
+
+.fa-bars{
+	display: none;
+	cursor: pointer;
+	color: $color01;
+}
+
+.logo_img {
+	width:120px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+
+
+//__________HEADER 2 CSS__________//
+// // //
+// //
+//
+
+.hero {
+	background-image: url(../img/hero.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 85vh;
+	position: relative;
+	z-index:-1;
+}
+
+.hero_text {
+	margin-left: 20px;
+}
+
+.hero_title {
+	font-size: 3.5em;
+	line-height: 1.4;
+	font-family: $title_font;
+	font-weight: 700;
+	width:70%;
+	margin-bottom:0;
+	color: white;
+}
+
+.hero_caption {
+	font-size: 1.5em;
+	line-height: 1.7;
+	font-family: $body_font;
+	font-weight: 400;
+	color: white;
+}
+
+.hero_phone {
+	padding-top: 2%;
+	margin-right:50px;
+}
+
+
+
+//__________DESIGN CSS__________//
+// // //
+// //
+//
+.design {
+	background-image: url(../img/design.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.design_description {
+	margin: 0 auto;
+	text-align: center;
+
+	h1, h2, p {
+		text-align: center;
+	}
+
+	p {
+		text-shadow: 0px 0px 5px $color03;	
+	}
+}
+
+
+.button, .submit {
+    background-image: linear-gradient(to bottom, $color01 50%, $color02 50%);
+    background-size: 100% 200%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    transition: background-position 0.4s;
+    border-radius:3px;
+
+    &:hover {
+    	background-position: 0 -100%;
+    }
+}
+
+
+
+//__________BATTERY CSS__________//
+// // //
+// //
+//
+.battery {
+	background-image: url(../img/battery.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.battery_description {
+	margin: 0 auto;
+	text-align: center;
+
+	h1, h2, p {
+		text-align: center;
+	}
+
+	h2, p {
+		background-color: rgba(152, 166, 62, 0.7);
+		border-radius: 5px;
+	}
+}
+
+
+
+//__________SPEC CSS__________//
+// // //
+// //
+//
+
+.spec_description {
+	margin: 0 auto;
+	text-align: center;
+	
+	h2, p {
+		text-align: center;
+		color: $color02;
+	}
+
+	img {
+		border: 5pt solid $color01;
+		width:100%;
+	}
+}
+
+
+
+tbody {
+	color: $color02;
+}
+
+.spec_table {
+	margin: 0 auto;
+	text-align: center;
+	width:50%;
+	margin-bottom: 50px;
+
+	table {
+		width:100%;
+	}
+}
+
+td {
+	padding:10px;
+	margin:5px;
+}
+
+tr {
+	padding:10px;
+
+	&:hover {
+		background-color: $color03;
+	}
+}
+
+tr td:first-child {
+	color: $color01;
+}
+
+
+
+
+//__________SNAKE CSS__________//
+// // //
+// //
+//
+.snake {
+	background-image: url(../img/snake.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.snake_description {
+	width:42%;
+	
+	div {
+		width:50%;
+		margin:0 auto;
+
+		img {
+			border: 5pt solid $color01;
+			width:100%;
+			background-color: white;
+		}
+	}
+}
+
+
+
+
+//__________BUYME CSS__________//
+// // //
+// //
+//
+.buyme {
+	background-color: rgb(35,35,35);
+}
+
+
+.buy_description {
+	margin: 0 auto;
+	text-align: center;
+
+	h1, h2, p {
+		text-align: center;
+	}
+
+	p {
+		margin-bottom:30px;
+	}
+
+	h2 {
+		margin-bottom:40px;
+	}
+}
+
+.myInput {
+    padding:10px;
+    border:2px solid $color03;
+    border-radius: 3px;
+    width:400px;
+    font-size:1.5em;
+    color: $color02;
+    margin-bottom:25px;
+
+    &:hover {
+		border:2px solid $color01;
+		box-shadow: 0 0 2px $color01;
+    }
+}
+
+
+.myForm {
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+//__________MEDIA QUERIES CSS__________//
+// // //
+// //
+//
+@include bp("bp-medium") {
+
+	ul.mainNav {
+		z-index:10;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(255,255,255,0.9);
+		display: none;
+		flex-flow: column wrap;
+		text-align: center;
+		justify-content: space-around;
+	
+		li {
+			margin-left: 2rem;
+			padding-top: 1%;
+			padding-bottom: 1%;
+			font-size: 2rem;
+			border-bottom: 1pt solid rgb(150,150,150);
+
+			a {
+				color: rgba(0,0,0,0.8);
+			}
+		}
+	}
+	
+	.fa {
+		display: inline-block;
+	}
+}
+
+
+@include bp("bp-small") {
+	.hero .flexParent {
+		flex-flow: column wrap;
+		
+		.hero_text {
+			margin: 0 auto;		
+		}
+	}
+
+	.hero_title, .hero_caption {
+		margin:0;
+		width:100%;
+		text-align: center;
+	}
+
+	.hero_phone {
+		margin:0;
+	}
+}
+
+
+@media (max-width: 918px) {
+	.snake_description {
+		width:100%;
+		background-color: $color01;
+	}
+}

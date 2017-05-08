@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:700|Open+Sans:400,400i" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+
+	
+	<meta charset="UTF-8">
+	<title>Elliot Kwan Project 3</title>
+</head>
+
+<body>
+	<a href="#" class="backtotop" title="Back to top"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i></a>
+
+<!-- ---------- SECTION HEADERS ---------- -->
+	<header class="header_nav">
+		<div class="wrapper flexParent">
+			<img  class="logo_img" src="img/logo.svg" alt="Nokia Logo" title="Hola! It's Nokia"></img>
+			<nav>
+				<div class="fa fa-bars fa-2x"></div>
+				<ul class="mainNav">
+					<li><a href="#design">Design</a></li>
+					<li><a href="#battery">Battery</a></li>
+					<li><a href="#spec">Specs</a></li>
+					<li><a href="#snake">Snake</a></li>
+					<li><a href="#buyme">Buy Me</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<header class="hero">
+		<div class="wrapper flexParent">
+			<div class="hero_text">
+				<p class="hero_title">The King of Phones Has Returned</p>
+				<p class="hero_caption">The Original Nokia 3310</p>
+			</div>
+
+			<div class="hero_phone"><img src="img/hero_phone.png" alt=""></div>
+		</div>
+	</header>
+
+<!-- ---------- SECTION DESIGN ---------- -->
+	<section id="design" class="design">
+		<div class="wrapper">
+			<div class="design_description">
+				<h1>the design</h1>
+				<h2>Blocky, Smooth, 100% Vintage</h2>
+				<p>As wireless technology has become part of the human life, we at Nokia are always striving for the best. After a decade of research, we have concluded that the orginal Nokia 3310 is the way to go.</p>
+				
+				<a href="https://youtu.be/PcVg9pzxzDA" target="_blank"><button class="button">Watch Video</button></a>
+			</div>
+		</div>
+	</section>
+
+<!-- ---------- SECTION BATTERY ---------- -->
+	<section id="battery" class="battery">
+		<div class="wrapper">
+			<div class="battery_description">
+				<h1>the battery</h1>
+				<h2>100% Battery Today, 99% Battery Tomor... Three Weeks Later</h2>
+				<p>Low Battery Life. The only thing in the world that stops a human from functioning. Pets are not being fed, kids are not getting picked up from school. Nokia 3310's 900maH battery provides superior battery life where most smartphones would drain it like a drug. Take a trip around the world, we guarantee you will be back at home with plenty of battery to spare.</p>
+			</div>
+		</div>
+	</section>
+
+<!-- ---------- SECTION SPEC ---------- -->
+	<section id="spec" class="spec">
+		<div class="wrapper">
+			<div class="spec_description">
+				<h1>the specs</h1>
+				<h2>Look what this baby is packing</h2>
+				<p>*yawn*... No one likes reading the specs and millenials today are probably more used podcasts anyways. Sorry, here are the specifications but don't worry, we simplified it so that you understand how much the older generations enjoyed the Nokia 3310.</p>
+				<div>
+					<img src="img/phone_spec.png" alt="" class="phone_spec">
+				</div>
+			</div>
+			<div class="spec_table">
+				<table>
+					<tbody>
+					<tr>
+						<td class="td_title"><strong>Design</strong></td>
+						<td>Otterbox-like casing. Sit on it, or drop it (just not in the toilet).</td>
+					</tr>
+					<tr>
+						<td class="td_title"><strong>Screen</strong></td>
+						<td>64x128px screen - big enough?</td>
+					</tr>
+					<tr>
+						<td class="td_title"><strong>RAM</strong></td>
+						<td>8MB. That's right, Megabytes</td>
+					</tr>
+					<tr>
+						<td class="td_title"><strong>Battery</strong></td>
+						<td>900mAh battery - real tests show 4 days of use before next charge</td>
+					</tr>
+					<tr>
+						<td class="td_title"><strong>Camera</strong></td>
+						<td>You have your eyes. We're traditional like that</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+<!-- ---------- SECTION SNAKE ---------- -->
+	<section id="snake" class="snake">
+		<div class="wrapper">
+			<div class="snake_description">
+				<h1>snake</h1>
+				<h2>We have your M*therF'n Snakes</h2>
+				
+				<div>
+					<img src="img/snakegamelogo.png" alt="">
+				</div>
+
+				<p>Snake and Snake II. The only game where the whole world has played. Nothing takes it back like this retro game. Show off your high scores to your friends. You don't need wi-fi for that.</p>
+			</div>
+		</div>
+	</section>
+
+<!-- ---------- SECTION BUYME ---------- -->
+	<section id="buyme" class="buyme">
+		<div class="wrapper">
+			<div class="buy_description">
+				<h1>Buy Me</h1>
+				<h2>$3.50<span title="Lochness Monster Not Included">*</span></h2>
+				<p>Fill in form today to purchase the phone for only tree-fiddy. By the way, you don't get to choose your color (you're paying only tree-fiddy!)</p>
+			</div>
+
+			<form action="sendEmail.php" method="POST" class="myForm" autocomplete="off" name="myForm">
+				
+				<div class="form_label_combo"> </div>
+					<label for="firstName">First Name</label>
+				<div>	
+					<input type="text" class="myInput" name="firstName" id="firstName" required="true" placeholder="Enter First Name" maxlength="24">
+				</div>
+
+				<div class="form_label_combo"> </div>
+					<label for="lastName">Last Name</label>
+				<div>	
+					<input type="text" class="myInput" name="lastName" id="lastName" required="true" placeholder="Enter Last Name" maxlength="24">
+				</div>
+
+				<div class="form_label_combo"> </div>
+					<label for="email">Email Address</label>
+				<div>
+					<input type="email" class="myInput" name="email" id="email" required="true" placeholder="Enter Email">
+				</div>
+
+				<input type="submit" value="Submit" class="submit">
+			</form>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
